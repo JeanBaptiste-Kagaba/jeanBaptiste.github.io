@@ -1,0 +1,46 @@
+Module 1: Core Data Structures
+
+| **Concept**              | **Python Structure**        | **R Equivalent**                  | **Explanation**                                                                  |
+| ------------------------ | --------------------------- | --------------------------------- | -------------------------------------------------------------------------------- |
+| **Numeric values**       | `int`, `float`              | `numeric` (integer + double)      | Both represent numbers. R does not strictly separate int/float unless specified. |
+| **Logical / Boolean**    | `bool` (`True`, `False`)    | `logical` (`TRUE`, `FALSE`)       | Same purpose: truth values.                                                      |
+| **Character / Text**     | `str`                       | `character`                       | Strings in both languages.                                                       |
+| **1D Homogeneous Array** | `numpy.array`               | **vector**                        | Vectors in R are like NumPy arrays: same data type inside.                       |
+| **1D Heterogeneous**     | `list`                      | **list**                          | Both can hold mixed types.                                                       |
+| **Immutable sequence**   | `tuple`                     | *(no direct equivalent)*          | R has no immutable vector; all vectors copy-on-modify.                           |
+| **Range of numbers**     | `range()`                   | `seq()`                           | Both generate sequences.                                                         |
+| **Set of unique items**  | `set`                       | `unique()` + vectors              | R has no native set structure; uses vectors with `unique()`.                     |
+| **Key–Value pairs**      | `dict`                      | **named list** or **environment** | R uses named lists or environments for key-value storage.                        |
+| **2D Table**             | `pandas.DataFrame`          | **data.frame**                    | Both store tabular data.                                                         |
+| **2D Numeric Matrix**    | `numpy.array` with 2D shape | **matrix**                        | Numeric tables without column names.                                             |
+| **Categorical**          | `pandas.Categorical`        | **factor**                        | Both represent categories/levels.                                                |
+| **Missing values**       | `None`, `np.nan`            | `NA`, `NaN`, `NULL`               | Rough equivalents.                                                               |
+
+
+Numeric values
+# Python
+```
+x_int = 5
+x_float = 3.14
+````
+
+# R
+```
+x_numeric <- 5
+x_double  <- 3.14
+```
+
+
+1.1 Python
+Scalars: int, float, bool, str
+Sequences: list, tuple, range
+Collections: dict, set
+Arrays: numpy.array
+1.2 R
+Scalars: numeric, character, logical
+Vectors, lists, factors, matrices, data frames
+Comparison of similar structures in Python and R
+1.3 Exercises
+Create, modify, and combine different data structures
+Observe mutability and how operations affect original data
+
